@@ -295,6 +295,7 @@ module.exports = {
         context.info(" Update workspaces in root package.json...");
         const rootPackageJson = path.join(context.project.root, "package.json");
         await addWorkspaceToRootPackageJson(rootPackageJson, [
+            "api/code/pageBuilder/updateSettings",
             "api/code/pageBuilder/importPages/*",
             "api/code/pageBuilder/exportPages/*"
         ]);
